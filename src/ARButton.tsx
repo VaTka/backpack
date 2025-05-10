@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
 const isMobile = () => /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);

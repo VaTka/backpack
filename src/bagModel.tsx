@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useGLTF, useTexture } from '@react-three/drei';
 import { MeshStandardMaterial } from 'three';
 import { materialMetalConfig } from './config';
