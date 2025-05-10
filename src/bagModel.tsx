@@ -12,7 +12,7 @@ type BagModelProps = {
 
 export default function BagModel({ color, materialType, materialDetail, position }: BagModelProps) {
   const gltf = useGLTF('/models/backpack.glb');
-  const { nodes, materials } = useGLTF('/models/backpack.glb');
+  const { nodes } = useGLTF('/models/backpack.glb');
   console.log(materialDetail)
   console.log(gltf);
   console.log(Object.keys(nodes));
