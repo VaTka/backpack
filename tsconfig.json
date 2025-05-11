@@ -1,11 +1,17 @@
 {
   "include": [
-    "src/**/*",
     "src/global.d.ts"
   ],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+        "paths": {
+            "three/webgpu": ["./node_modules/three/build/three.webgpu.min.js"]
+        },
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+    }
 }
